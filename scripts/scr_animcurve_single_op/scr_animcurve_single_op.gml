@@ -83,3 +83,40 @@ function animcurve_points_slice(_channel_src,_amount,_start=0,_end=1)
 
 	return _points
 }
+
+
+/**
+ * Subdivide between the points of an array of points. Returns a new array of points
+ * @param {Struct} _channel_src The channel as returned by animcurve_get_channel()
+ * @param {Real} _amount Amount of subdivisions
+ * @param {Real} _start Start the subdivisions from this x (0 to 1). This will find the closest point to it
+ * @param {Real} _end Make subdivisions until this x (0 to 1). This will find the closest point to it
+ * @return {Array}
+ */
+function animcurve_points_subdivide(_channel_src,_amount,_start=0,_end=1) 
+{
+	if _amount < 2 return _channel_src.points
+	
+
+	var _points		= _channel_src.points,
+		_sub_points	= [],
+		_startIndex = 0,
+		_endIndex	= array_length(_channel_src.points)
+	if _start	!= 0	_startIndex	= animcurve_point_find_closest(_points,_start)
+	if _end		!= 1	_endIndex	= animcurve_point_find_closest(_points,_start)
+
+	for(var _i = _startIndex ; _i < _endIndex-1 ; _i ++ )
+	{
+		var _incr	= (_points[_i+1].posx-_points[_i].posx)/floor(_amount)
+		var _pos	= _points[_i].posx
+		
+		for(var _j = 0 ; _j < _amount ; _j ++ )
+		{
+			_pos += _incr
+			animcurve_point_add(_sub_points,_pos , animcurve_channel_evaluate(_channel_src,_pos),false)
+		}
+	}
+	_points = animcurve_points_merge(_points,_sub_points)
+	
+	return _points
+}

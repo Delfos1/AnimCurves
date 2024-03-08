@@ -82,10 +82,12 @@ _a.points = animcurve_points_normalize(_a.points)
 })
 
 slice_amount = 2
+subdiv_amount = 2
 simplify_amount = 0
 random_lower = -.02
 random_higher =  .02
 var _slice_ref = ref_create(self,"slice_amount")
+var _subdiv_ref = ref_create(self,"subdiv_amount")
 var _simp_ref = ref_create(self,"simplify_amount")
 
 var _rlower_ref = ref_create(self,"random_lower")
@@ -112,6 +114,14 @@ var _a = my_channel
 })
 	dbg_same_line()
 	dbg_slider_int(_slice_ref,2,50," ")
+	
+dbg_button("Subdivide", function(){	
+var _a = my_channel 
+
+ _a.points = animcurve_points_subdivide(_a,subdiv_amount)
+})
+	dbg_same_line()
+	dbg_slider_int(_subdiv_ref,2,50," ")
 	
 dbg_button("Randomize", function(){	
 var _a = my_channel 

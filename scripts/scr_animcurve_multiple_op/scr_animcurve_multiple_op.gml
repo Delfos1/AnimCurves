@@ -1,4 +1,4 @@
-
+//feather ignore all
 /**
  * Merges two sets of animation curve points, where all points are mantained as-is unless they overlap. Returns an array of points
  * @param {Array} _pointsa 
@@ -13,7 +13,7 @@ function animcurve_points_merge(_pointsa,_pointsb,_a_over_b=true)
 	var _i = 0
 	repeat(array_length(_pointsb))
 	{
-		animcurve_point_add(_temp,_pointsb[i].posx,_pointsb[i].value,_a_over_b)
+		animcurve_point_add(_temp,_pointsb[_i].posx,_pointsb[_i].value,_a_over_b)
 		_i++
 	}
 	
