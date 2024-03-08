@@ -99,6 +99,12 @@ var _a = my_channel
 _a.points =  animcurve_simplify(_a.points,simplify_amount)
 })
 
+dbg_button("Lucky Simplify", function(){	
+var _a = my_channel 
+
+_a.points =  animcurve_simplify(_a.points)
+})
+
 dbg_button("Slice", function(){	
 var _a = my_channel 
 

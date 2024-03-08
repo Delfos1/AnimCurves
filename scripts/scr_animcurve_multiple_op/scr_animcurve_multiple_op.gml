@@ -1,20 +1,20 @@
 
 /**
  * Merges two sets of animation curve points, where all points are mantained as-is unless they overlap. Returns an array of points
- * @param {Array , Struct} pointsa 
- * @param {Array , Struct} pointsb 
- * @param {Boolean} a_over_b Whether the first set has priority over the second if there are overlapping points
+ * @param {Array} _pointsa 
+ * @param {Array} _pointsb 
+ * @param {Boolean} _a_over_b Whether the first set has priority over the second if there are overlapping points
  * @return {Array}
  */
-function animcurve_points_merge(pointsa,pointsb,a_over_b=true)
+function animcurve_points_merge(_pointsa,_pointsb,_a_over_b=true)
 {
-	var _temp = pointsa //new animcurve_point_collection(pointsa) 
+	var _temp = _pointsa //new animcurve_point_collection(pointsa) 
 	
-	var i = 0
-	repeat(array_length(pointsb))
+	var _i = 0
+	repeat(array_length(_pointsb))
 	{
-		animcurve_point_add(_temp,pointsb[i].posx,pointsb[i].value,a_over_b)
-		i++
+		animcurve_point_add(_temp,_pointsb[i].posx,_pointsb[i].value,_a_over_b)
+		_i++
 	}
 	
 	return _temp
