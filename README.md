@@ -1,5 +1,7 @@
 08-MARCH-2024
+
 Welcome to the Animation Curves function library!
+
 GameMaker 2024.2 required as this version fixes several issues with animation curves.
 
 Inside the sample project there is a debug menu where you can try out the different available functions. There are operations that require two curves.
