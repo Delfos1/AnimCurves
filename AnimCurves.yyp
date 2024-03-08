@@ -1,21 +1,18 @@
 {
-  "$GMProject": "",
-  "%Name": "AnimCurves",
-  "AudioGroups": [
+  "$GMProject":"",
+  "%Name":"AnimCurves",
+  "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
-  "configs": {
-    "children": [],
-    "name": "Default",
+  "configs":{
+    "children":[],
+    "name":"Default",
   },
-  "defaultScriptType": 1,
-  "Folders": [
+  "defaultScriptType":1,
+  "Folders":[
     {"$GMFolder":"","%Name":"Animation Curves","folderPath":"folders/Animation Curves.yy","name":"Animation Curves","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"KazanGames","folderPath":"folders/KazanGames.yy","name":"KazanGames","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"TurboGML","folderPath":"folders/KazanGames/TurboGML.yy","name":"TurboGML","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Code","folderPath":"folders/KazanGames/TurboGML/Code.yy","name":"Code","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Notes","folderPath":"folders/Notes.yy","name":"Notes","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -29,14 +26,14 @@
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "IncludedFiles": [],
-  "isEcma": false,
-  "LibraryEmitters": [],
-  "MetaData": {
-    "IDEVersion":"2024.200.0.494",
+  "IncludedFiles":[],
+  "isEcma":false,
+  "LibraryEmitters":[],
+  "MetaData":{
+    "IDEVersion":"2024.2.0.132",
   },
-  "name": "AnimCurves",
-  "resources": [
+  "name":"AnimCurves",
+  "resources":[
     {"id":{"name":"ac_1","path":"animcurves/ac_1/ac_1.yy",},},
     {"id":{"name":"ob_Lower_scale","path":"objects/ob_Lower_scale/ob_Lower_scale.yy",},},
     {"id":{"name":"ob_Upper_scale","path":"objects/ob_Upper_scale/ob_Upper_scale.yy",},},
@@ -48,23 +45,15 @@
     {"id":{"name":"scr_animcurve_single_op","path":"scripts/scr_animcurve_single_op/scr_animcurve_single_op.yy",},},
     {"id":{"name":"scr_animcurves_simplify","path":"scripts/scr_animcurves_simplify/scr_animcurves_simplify.yy",},},
     {"id":{"name":"scr_animcurve_points","path":"scripts/scr_animcurve_points/scr_animcurve_points.yy",},},
-    {"id":{"name":"TGM_Arrays","path":"scripts/TGM_Arrays/TGM_Arrays.yy",},},
-    {"id":{"name":"TGM_Data","path":"scripts/TGM_Data/TGM_Data.yy",},},
-    {"id":{"name":"TGM_DimensionConversion","path":"scripts/TGM_DimensionConversion/TGM_DimensionConversion.yy",},},
-    {"id":{"name":"TGM_Graphics","path":"scripts/TGM_Graphics/TGM_Graphics.yy",},},
-    {"id":{"name":"TGM_Paths","path":"scripts/TGM_Paths/TGM_Paths.yy",},},
-    {"id":{"name":"TGM_ProceduralData","path":"scripts/TGM_ProceduralData/TGM_ProceduralData.yy",},},
-    {"id":{"name":"TGM_Structs","path":"scripts/TGM_Structs/TGM_Structs.yy",},},
-    {"id":{"name":"TGM_Vector","path":"scripts/TGM_Vector/TGM_Vector.yy",},},
     {"id":{"name":"sp_scale","path":"sprites/sp_scale/sp_scale.yy",},},
   ],
-  "resourceType": "GMProject",
-  "resourceVersion": "2.0",
-  "RoomOrderNodes": [
+  "resourceType":"GMProject",
+  "resourceVersion":"2.0",
+  "RoomOrderNodes":[
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
-  "templateType": "game",
-  "TextureGroups": [
+  "templateType":"game",
+  "TextureGroups":[
     {"$GMTextureGroup":"","%Name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","customOptions":"","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"name":"Default","resourceType":"GMTextureGroup","resourceVersion":"2.0","targets":-1,},
   ],
 }
